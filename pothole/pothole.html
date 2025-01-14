@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="2.css">
+    <link rel="stylesheet" href="loading_animation.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pothole Home</title>
+    <style>
+        /* Reset and Body Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f2ff;
+            color: #333;
+        }
+        
+        /* Header Styling */
+        .header {
+            background-color: #ffffff;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Hero Section Styling */
+        .hero {
+            background-color: #0066cc;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 32px;
+        }
+        .hero p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .tags {
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .tag {
+            background-color: #99ccff;
+            color: #003d99;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin: 5px;
+            display: inline-block;
+        }
+        .hero img {
+            max-width: 60%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        /* CTA and Content Styling */
+        .cta {
+            background-color: #003d99;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            max-width: 300px;
+            text-align: left;
+        }
+        .cta h3 {
+            font-size: 18px;
+        }
+        .cta ul {
+            margin: 15px 0;
+            padding-left: 20px;
+            list-style-type: none;
+        }
+        .cta ul li::before {
+            content: "✔️";
+            margin-right: 8px;
+            color: #00cc66;
+        }
+        .cta button {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        /* Content Sections Styling */
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            color: #003d99;
+            margin-bottom: 10px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        
+        /* Sidebar Styling */
+        .sidebar {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .sidebar h4 {
+            font-size: 16px;
+            color: #003d99;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .sidebar ul li {
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    
+</head>
+<body>
+    <div id="preloader" class="preloader"></div>
+
+    <div class="header">
+        <div class="title"></div>
+        <nav>
+            <a href="#">Platform</a>
+            <a href="#">Solutions</a>
+            <a href="#">Customers</a>
+            <a href="#">Resources</a>
+            <a href="#">Log in</a>
+            <a href="#" style="background-color: #0066cc; padding: 10px 15px; border-radius: 5px; color: white;">Hello!</a>
+        </nav>
+    </div>
+    
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Pothole Detection</h1>
+        <p>Automated detection of potholes with AI vision</p>
+        <div class="tags">
+            <span class="tag">Smart City</span>
+            <span class="tag">Transportation</span>
+        </div>
+        <img src="2.jpg" alt="Pothole Detection Image">
+    </div>
+    
+    <!-- CTA Section -->
+    <div class="cta">
+        <h3>Get started with Pothole Detection</h3>
+        <ul>
+            <li>One platform, all use cases</li>
+            <li>Connect all existing cameras</li>
+            <li>Enterprise scalability</li>
+        </ul>
+        <button>Get started</button>
+    </div>
+    
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>The problem of potholes</h2>
+        <p>Potholes are a widespread and persistent issue affecting roads worldwide, causing significant 
+            challenges for transportation departments, vehicle owners, and pedestrians. Their formation is 
+            due to a combination of environmental and mechanical factors, including weather conditions, 
+            traffic loads, and the quality of road construction materials.</p> 
+        <h2>What is pothole detection?</h2>
+        <p>Pothole detection is an essential part of maintaining roads and ensuring safe driving conditions. It is a challenging task that requires accurate detection and monitoring of road conditions in real-time. With advancements in computer vision, the Internet of Things (IoT) and Artificial Intelligence (AI), the wide feeds of distributed cameras can be analyzed with deep learning models to inspect road conditions with AI.</p>
+    </div>
+
+
+    <div class="video">
+        <video src="1.mp4" controls poster="videos and thubnails/Tumbnail.jpeg" id="video"></video>
+    </div>
+    
+    <!-- Sidebar Section (Optional) -->
+    <div class="sidebar">
+        <h4>Contents</h4>
+        <ul>
+            <li>The problem of potholes</li>
+            <li>What is visual pothole detection?</li>
+            <li>Features of pothole detection with AI</li>
+            <li>The value of automated pothole detection with AI</li>
+        </ul>
+    </div>
+    
+
+    <script>
+        window.addEventListener("load", function(){
+            var loader = document.getElementById("preloader");
+            loader.style.animation = "none"; // Pause the animation
+            setTimeout(function(){
+                loader.style.display = "none"; // Hide the preloader after 1 second
+            }, 3000); // 1000 milliseconds = 1 second
+        });
+    </script>
+</body>
+</html>
+
